@@ -1,0 +1,136 @@
+body{
+  box-sizing: border-box;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Star Jedi", "Open Sans", sans-serif;
+}
+
+
+.logo{
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  fill: yellow;
+}
+
+.spinner{
+  fill: yellow;
+  height: 70px;
+  width: 70px;
+  margin-top: 10rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+header{
+  height: fit-content;
+}
+
+.item-content{
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.567);
+  
+}
+
+.item-content:hover{
+  box-shadow: rgb(172, 158, 228) 0px 0px 10px;
+  transition: .4s;
+}
+
+
+ul{
+  display: grid;
+  grid-template-columns: 350px 350px 350px ;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.item-content:nth-child(1){
+  background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-1.0c96fd00.png);
+}
+
+.item-content:nth-child(2){
+  background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png);
+}
+
+.item-content:nth-child(3){
+  background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-3.1914d853.png);
+}
+
+.item-content:nth-child(4){
+  background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-4.c21c4d4b.png);
+}
+
+.item-content:nth-child(5){
+    background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-5.67d061d6.png);
+}
+
+.item-content:nth-child(6){
+  background: url(https://finmavis.github.io/swapi-task/static/media/bg-card-6.b4fea25d.png);
+}
+
+li{
+  list-style-type: none;
+  padding: 15px;
+}
+
+.title{
+  margin-top: -3px;
+  padding-top: 2px;
+  letter-spacing: 2px;
+}
+
+.opening-crawl{
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: -webkit-box;
+  white-space: normal;
+  margin-bottom: 2rem;
+  width: 310px;
+  height: 120px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding-bottom: 30px;
+}
+
+.release-date{
+  font-size: 14px;
+  margin-top: -15px;
+  color: #9d9d9d;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: yellow;
+  border-top: 2px solid rgba(198, 79, 79, 0.797);
+  padding-right: 250px;
+  padding-top: 10px;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 14px;
+}
+
+.loading{
+  color: red;
+  margin-top: 10rem;
+}
