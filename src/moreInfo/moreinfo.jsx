@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
-import {useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import {useNavigate, useSearchParams } from 'react-router-dom';
 import './moreinfo.css'
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import axios from "axios";
 
 
